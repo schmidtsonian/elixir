@@ -1,6 +1,9 @@
 # elixir
 
-vagrant up
-vagrant ssh
 
-vagrant halt
+**> vagrant up**
+
+**> vagrant ssh**
+
+
+**> vagrant halt**
