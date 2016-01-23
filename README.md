@@ -1,5 +1,6 @@
 # elixir
 
+Need ubuntu_1504_elixir.box
 
 **> vagrant up**
 
