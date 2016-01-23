@@ -46,3 +46,10 @@ interactive mode elixir
 > [1,2,3,4] |> Enum.map(&(&1*2)) |> Enum.reduce(0, fn(acc,val) -> acc + val end)
 
 > 20
+
+//compile
+-> iex
+> c "Playground.ex"
+> Playground.fib(0)
+> Playground.fib(1)
+> Playground.fib(10)
