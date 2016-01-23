@@ -50,12 +50,14 @@ interactive mode elixir
 //compile
 -> iex
 > c "Playground.ex"
+
+//fibonacci
 > Playground.fib(0)
 > Playground.fib(1)
 > Playground.fib(10)
 
 
-
+//sum
 > Playground.sum([1,2,3,4])
 10
 
@@ -70,3 +72,6 @@ interactive mode elixir
 
 > Playground.sum([])
 0
+
+//map function return collection
+> Playground.map([1,2,3,4], &(&1*2))
