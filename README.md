@@ -19,7 +19,7 @@ interactive mode elixir
 > 1+2
 
 
-//atom
+//atom (etiquetas, constantes, etc)
 
 > :success
 
@@ -94,3 +94,6 @@ interactive mode elixir
 
 > Playground.print(15)
 "FizzBuzz"
+
+> 1..101 |> Enum.map(&Playground.print/1)
+> 1..101 |> Enum.map(&Playground.print/1) |> IO.inspect limit: 100
