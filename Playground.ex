@@ -1,4 +1,5 @@
 defmodule Playground do
+	# fibbonaci
 	def fib(0), do: 1
 	def fib(1), do: 1
 	def fib(n) when n > 1 do
@@ -8,4 +9,9 @@ defmodule Playground do
 		IO.puts "Fibonacci not supported"
 	end
 
+	# 
+	def sum([]), do: 0
+	def sum([head|tail]) do
+		head + sum(tail)
+	end
 end

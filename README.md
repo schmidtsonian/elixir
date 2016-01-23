@@ -53,3 +53,20 @@ interactive mode elixir
 > Playground.fib(0)
 > Playground.fib(1)
 > Playground.fib(10)
+
+
+
+> Playground.sum([1,2,3,4])
+10
+
+> [head|tail] = [1,2,3,4]
+[1,2,3,4]
+
+> head
+1
+
+> tail
+[1,2,3,4]
+
+> Playground.sum([])
+0
