@@ -75,3 +75,22 @@ interactive mode elixir
 
 //map function return collection
 > Playground.map([1,2,3,4], &(&1*2))
+
+//FizzBuzz
+> Playground.print(1)
+1
+
+> Playground.print(2)
+2
+
+> Playground.print(3)
+"Fizz"
+
+> Playground.print(4)
+4
+
+> Playground.print(5)
+"Buzz"
+
+> Playground.print(15)
+"FizzBuzz"
