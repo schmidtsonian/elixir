@@ -107,3 +107,6 @@ JOURNAL!!!
 
 
 **> mix new journal
+**> mix run -e 'Journal.CLI.main(["--help"])'
+**> mix run -e 'Journal.CLI.main(["-h"])'
+**> mix test

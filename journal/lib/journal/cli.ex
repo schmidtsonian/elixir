@@ -6,9 +6,20 @@ defmodule Journal.CLI do
    end 
    
    def parse_args(argv) do
-   
+    options = OptionParser.parse(argv,switches: [help: :boolean], aliases: [h: :help])
+    case options do
+        {[help: true], _, _} -> :help
+    end
    end
    
-   def process() do
+   def process(:help) do
+    
+    IO.puts """
+    usage:  journal --help returns this message
+            journal -h
+            journal <message>
+            journal --from <yesterday|today>
+    """
    end
+   
 end
