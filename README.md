@@ -105,8 +105,15 @@ interactive mode elixir
 
 JOURNAL!!!
 
-
+Create a new project
 **> mix new journal
+
+The project Journal
 **> mix run -e 'Journal.CLI.main(["--help"])'
 **> mix run -e 'Journal.CLI.main(["-h"])'
 **> mix test
+
+Bild the project (binary)
+**> mix escript.build
+
+**> ./journal --help

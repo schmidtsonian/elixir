@@ -5,9 +5,14 @@ defmodule Journal.Mixfile do
     [app: :journal,
      version: "0.0.1",
      elixir: "~> 1.1",
+     escript: escript_config,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]
+  end
+  
+  def escript_config do
+    [main_module: Journal.CLI]
   end
 
   # Configuration for the OTP application
