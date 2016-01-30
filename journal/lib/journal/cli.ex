@@ -40,6 +40,5 @@ defmodule Journal.CLI do
     IO.puts "Something wrong happend"
     IO.puts "Error: #{reason}"
     System.halt(0)
-    
    end
 end
