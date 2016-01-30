@@ -121,3 +121,6 @@ or
 **> ./journal -h
 
 **> ./journal "hello world"
+
+To install dependencies
+**> mix deps.get
