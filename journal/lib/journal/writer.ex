@@ -2,7 +2,7 @@ defmodule Journal.Writer do
 
     use Timex
     
-    @base_path Path.expand("/vagrant/journal/.journal/")
+    @base_path Application.get_env(:journal, :base_path)
 
     def save(message) do
         
