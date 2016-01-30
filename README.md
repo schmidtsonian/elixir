@@ -97,3 +97,13 @@ interactive mode elixir
 
 > 1..101 |> Enum.map(&Playground.print/1)
 > 1..101 |> Enum.map(&Playground.print/1) |> IO.inspect limit: 100
+
+
+
+
+
+
+JOURNAL!!!
+
+
+**> mix new journal
