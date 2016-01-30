@@ -1,8 +1,17 @@
 defmodule Journal.Writer do
 
+    use Timex
+    
     @base_path = Path.expand("./vagrant/test/journal/.journal/")
 
     def save(message) do
-        File.write(Path.join([{@base_path},"/123123.txt"]), message)
+        file = file_path
+        
+        File.write(file, message)
+    end
+    
+    def file_path() do
+        Path.join([@base_path, "#{Date.now(:secs)}.txt"])
+        
     end
 end 
