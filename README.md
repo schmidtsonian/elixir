@@ -128,3 +128,5 @@ To install dependencies
 Compile and enter iex
 **> iex -S mix
 **> Journal.Writer.save "start this"
+
+**> mix run -e 'Journal.CLI.main(["hello world"])'
