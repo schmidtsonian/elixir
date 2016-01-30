@@ -9,6 +9,8 @@ defmodule Journal.CLI do
     options = OptionParser.parse(argv,switches: [help: :boolean], aliases: [h: :help])
     case options do
         {[help: true], _, _} -> :help
+        {_, [message], _} -> {message}
+        _ -> :help
     end
    end
    
@@ -20,6 +22,15 @@ defmodule Journal.CLI do
             journal <message>
             journal --from <yesterday|today>
     """
+    System.halt(0)
+   end
+   
+   def process({message}) do
+    
+    IO.puts """
+        // .txt -> ""
+    """
+    System.halt(0)
    end
    
 end

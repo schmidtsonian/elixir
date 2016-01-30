@@ -117,3 +117,7 @@ Bild the project (binary)
 **> mix escript.build
 
 **> ./journal --help
+or
+**> ./journal -h
+
+**> ./journal "hello world"
