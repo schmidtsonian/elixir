@@ -124,3 +124,7 @@ or
 
 To install dependencies
 **> mix deps.get
+
+Compile and enter iex
+**> iex -S mix
+**> Journal.Writer.save "start this"
