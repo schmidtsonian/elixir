@@ -27,10 +27,19 @@ defmodule Journal.CLI do
    
    def process({message}) do
     
-    IO.puts """
-        // .txt -> ""
-    """
+    Journal.Writter.save(message)
+        |> proccess_file
+   end
+   
+   def proccess_file({:ok, file_path}) do
+    IO.puts "Journal successfull saved at #{Path.basename(file_path)}"
     System.halt(0)
    end
    
+   def proccess_file({:error, reason}) do
+    IO.puts "Something wrong happend"
+    IO.puts "Error: #{reason}"
+    System.halt(0)
+    
+   end
 end
